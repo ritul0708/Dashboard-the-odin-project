@@ -181,19 +181,94 @@ ul > span > li {
   cursor: pointer;
 }
 
-
 /* Lower Heading Section Ends Here */
 
-
-
-
-
-
+/* Main Section Starts Here */
 
 main {
   grid-column: 2/4;
-  background-color: red;
+  background-color: #b7e1ed63;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
 }
+
+
+/* Main Left Starts Here */
+.main-left {
+  grid-column: 1/2;
+}
+
+/* Main Left Ends Here */
+
+/* Main Right Starts Here */
+.main-right {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  padding-right: 1em;
+  padding-top: 1em;
+  gap: 15px;
+}
+
+.announcements {
+  width: fit-content;
+  padding: 0.5em;
+}
+
+.heading {
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+
+.announcement-card {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1em 1.5em 1em 1em;
+  box-shadow: inset 4px 4px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-card > span {
+  padding: 0px 5px;
+}
+
+
+.trending {
+  padding: 0.5em;
+}
+
+.trending-card {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1em 1.5em 1em 1em;
+  box-shadow: inset 4px 4px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trending-card > span {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  padding: 1em;
+
+}
+
+.trending-card > span > img {
+  object-fit: contain;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+.trending-username {
+  font-size: large;
+  font-weight: 700;
+}
+
+
+/* Main Right Ends Here */
 
 
 
